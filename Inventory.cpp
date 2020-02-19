@@ -26,8 +26,8 @@ ostream& operator<<(ostream& stream, const Inventory& item)
     stream << "Sorry, that item is out of stock";
   }
   else{
-  stream << item.m_name
-         << " $"
+ 
+  stream << item.m_name << " $"
          << std::fixed << std::setprecision(2) << item.m_price;
 
 }
