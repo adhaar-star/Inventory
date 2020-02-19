@@ -19,14 +19,13 @@ void Inventory::sell()
 }
 }
 
-
 ostream& operator<<(ostream& stream, const Inventory& item)
 {
   if(item.m_in_stock==0){
     stream << "Sorry, that item is out of stock";
   }
   else{
- 
+
   stream << item.m_name << " $"
          << std::fixed << std::setprecision(2) << item.m_price;
 
