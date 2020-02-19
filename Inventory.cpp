@@ -19,7 +19,6 @@ void Inventory::sell()
 }
 }
 
-
 ostream& operator<<(ostream& stream, const Inventory& item)
 {
   if(item.m_in_stock==0){
