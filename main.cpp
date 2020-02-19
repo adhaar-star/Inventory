@@ -19,6 +19,10 @@ int main()
       stock.sell();
       cout<<stock<<"\n";
     }
+    else if( choice != 'q' && choice != 'Q' )
+    {
+      cout<<"Please enter S or Q\n";
+    }
   }while( choice != 'q' && choice != 'Q');
 
   return 0;
